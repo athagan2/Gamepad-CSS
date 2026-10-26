@@ -1,0 +1,464 @@
+:root {
+    /* Arrow button image links (D-Pad / Directional) */
+    --left-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/xbox%20left.png);
+    --down-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/xbox%20down.png);
+    --right-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/xbox%20right.png);
+    --up-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/xbox%20up.png);
+
+    /* Right side button image links (Face & Bumpers) */
+    --top-row-index-finger-button-source-image: url(https://i.im.ge/QMbio5q/Basic_Attack.png);
+    --top-row-middle-finger-button-source-image: url(https://i.im.ge/QMbi9fz/Special.png);
+    --top-row-ring-finger-button-source-image: url(https://i.im.ge/QMb0ozS/Switch.png);
+    --top-row-pinky-finger-button-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/lb.png);
+    
+    --bot-row-index-finger-button-source-image: url(https://i.im.ge/QMb5F2r/Dodge.png);
+    --bot-row-middle-finger-button-source-image: none;
+    --bot-row-ring-finger-button-source-image: url(https://i.im.ge/QMb0lFz/Ultimate_Clean.png);
+    --bot-row-pinky-finger-button-source-image: none;
+
+    /* Start/back vars */
+    --start-button-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/Start2pxBorder.png);
+    --back-button-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/Back2pxBorder.png);
+
+    /* L3/R3 button vars */
+    --ls-button-source-image: none;
+    --rs-button-source-image: none;
+
+    /* Stick vars */
+    --fstick-source-image: url(https://imgur.com/Cdxibvo.png);
+
+    /* Location vars (Posisi Tombol) */
+    --a-top: 533px;
+    --b-top: 393px;
+    --x-top: 393px;
+    --y-top: 253px;
+    
+    --rb-top: 45px;
+    --lb-top: 45px;
+    --rt-top: 45px;
+    --lt-top: 45px;
+    
+    --start-top: 240px;
+    --back-top: 240px;
+    
+    --ls-top: 585px;
+    --rs-top: 585px;
+    
+    --a-left: 905px;
+    --b-left: 1015px;
+    --x-left: 785px;
+    --y-left: 905px;
+    
+    --rb-left: 777px;
+    --lb-left: 337px;
+    --rt-left: 937px;
+    --lt-left: 177px;
+    
+    --start-left: 624px;
+    --back-left: 500px;
+    
+    --ls-left: 431px;
+    --rs-left: 695px;
+    
+    /* D-Pad / Directional Location vars */
+    --dir-right-top: 393px;
+    --dir-right-left: 342px;
+    --dir-down-top: 528px;
+    --dir-down-left: 223px;
+    --dir-left-top: 395px;
+    --dir-left-left: 102px;
+    --dir-up-top: 258px;
+    --dir-up-left: 220px;
+}
+
+body { 
+    background-color: rgba(0, 0, 0, 0); 
+    margin: 0px auto; 
+    overflow: hidden; 
+}
+
+.controller.fight-stick {
+    background: transparent;
+    height: 535px;
+    width: 1500px;
+}
+
+.fight-stick.disconnected {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background: url(https://imgur.com/oDdTc1t.png) no-repeat;
+}
+
+/* Properties for all buttons */
+.fight-stick .back,
+.fight-stick .start,
+.fight-stick .a,
+.fight-stick .b,
+.fight-stick .x,
+.fight-stick .y,
+.fight-stick .bumper.right,
+.fight-stick .bumper.left,
+.fight-stick .trigger-button.right,
+.fight-stick .trigger-button.left,
+.fight-stick .stick.right,
+.fight-stick .stick.left,
+.fight-stick .face.up,
+.fight-stick .face.right,
+.fight-stick .face.down,
+.fight-stick .face.left {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: block;
+  border-radius: 100%;
+  translate: -50% -50%;
+  box-sizing: border-box;
+}
+
+/* General Text Styling inside buttons */
+.fight-stick .back::before,
+.fight-stick .start::before,
+.fight-stick .a::before,
+.fight-stick .b::before,
+.fight-stick .x::before,
+.fight-stick .y::before,
+.fight-stick .bumper.right::before,
+.fight-stick .bumper.left::before,
+.fight-stick .trigger-button.right::before,
+.fight-stick .trigger-button.left::before,
+.fight-stick .stick.right::before,
+.fight-stick .stick.left::before,
+.fight-stick .face.up::before,
+.fight-stick .face.right::before,
+.fight-stick .face.down::before,
+.fight-stick .face.left::before {
+  color: var(--text-color);
+  font-size: var(--text-font-size);
+  content: var(--text-content);
+  font-family: var(--text-font-family);
+  translate: -50% -50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-text-stroke-color: var(--text-stroke-color);
+  -webkit-text-stroke-width: var(--text-stroke-width);
+}
+
+/* Start / Back Buttons */
+.fight-stick .back, .fight-stick .start {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border: 5.55556px solid rgb(0, 0, 0);
+}
+
+.fight-stick .back {
+    background-image: var(--back-button-source-image);
+    top: var(--back-top);
+    left: var(--back-left);
+    background-color: rgb(51, 51, 51);
+    --text-color: #ffffff;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+
+.fight-stick .back.pressed {
+    background-image: url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/BackBlack.png");
+    background-color: rgb(255, 255, 255);
+}
+
+.fight-stick .start {
+    background-image: var(--start-button-source-image);
+    top: var(--start-top);
+    left: var(--start-left);    
+    background-color: rgb(51, 51, 51);
+    --text-color: #ffffff;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+
+.fight-stick .start.pressed {
+    background-image: url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/StartBlack.png");
+    background-color: rgb(255, 255, 255);
+}
+
+/* Face Buttons (X, Y, A, B) */
+.fight-stick .a, .fight-stick .b, .fight-stick .x, .fight-stick .y {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: 8.88889px solid rgb(0, 0, 0);
+}
+
+.fight-stick .x {
+    background-image: var(--top-row-index-finger-button-source-image);
+    top: var(--x-top);
+    left: var(--x-left);
+    background-color: rgb(0, 189, 186);
+    background-size: 133px auto;
+    --text-color: #ffffff;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+.fight-stick .x.pressed {
+    background-color: rgb(255, 255, 255);
+    background-size: 170px auto;
+}
+
+.fight-stick .y {
+    background-image: var(--top-row-middle-finger-button-source-image);
+    top: var(--y-top);
+    left: var(--y-left);
+    background-color: rgb(0, 0, 0);
+    background-size: 166px auto;
+    --text-color: #ffffffFF;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+.fight-stick .y.pressed {
+    background-color: rgb(255, 255, 255);
+}
+
+.fight-stick .a {
+    background-image: var(--bot-row-index-finger-button-source-image);
+    top: var(--a-top);
+    left: var(--a-left);
+    background-color: rgb(0, 0, 0);
+    background-size: 137px auto;
+    --text-color: #ffffffFF;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+.fight-stick .a.pressed {
+    background-color: rgb(255, 255, 255);
+    background-size: 196px auto;
+}
+
+.fight-stick .b {
+    background-image: var(--bot-row-middle-finger-button-source-image);
+    top: var(--b-top);
+    left: var(--b-left);
+    background-color: rgb(87, 82, 82);
+    border: 7.77778px solid rgb(0, 0, 0);
+    background-size: 128px auto;
+    --text-color: #ffffffFF;
+    --text-font-size: 57px;
+    --text-stroke-color: #ffffff;
+    --text-stroke-width: 0px;
+    --text-content: "B";
+    --text-font-family: "Arial";
+}
+.fight-stick .b.pressed {
+    background-color: rgb(255, 102, 102);
+    background-size: 155px auto;
+    --text-stroke-width: -1px;
+}
+
+/* Bumpers (RB, LB) */
+.fight-stick .bumper.right, .fight-stick .bumper.left {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: 8.88889px solid rgb(0, 0, 0);
+}
+
+.fight-stick .bumper.right {
+    background-image: var(--top-row-ring-finger-button-source-image);
+    top: var(--rb-top);
+    left: var(--rb-left);
+    background-color: rgb(0, 0, 0);
+    background-size: 137px auto;
+    --text-color: #ffffffFF;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+.fight-stick .bumper.right.pressed {
+    background-color: rgb(255, 255, 255);
+    background-size: 179px auto;
+}
+
+.fight-stick .bumper.left {
+    background-image: var(--top-row-pinky-finger-button-source-image);
+    top: var(--lb-top);
+    left: var(--lb-left);
+    background-color: rgb(0, 0, 0);
+    background-size: 137px auto;
+    --text-color: #ffffffFF;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+.fight-stick .bumper.left.pressed {
+    background-color: rgb(255, 255, 255);
+    background-size: 179px auto;
+}
+
+/* Triggers (RT, LT) */
+.fight-stick .trigger-button.right, .fight-stick .trigger-button.left {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+}
+
+.fight-stick .trigger-button.right {
+    background-image: var(--bot-row-ring-finger-button-source-image);
+    top: var(--rt-top);
+    left: var(--rt-left);
+    background-color: rgb(0, 0, 0);
+    border: 8.88889px solid rgb(0, 0, 0);
+    background-size: 137px auto;
+    --text-color: #ffffffFF;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+.fight-stick .trigger-button.right.pressed {
+    background-color: rgb(255, 255, 255);
+}
+
+.fight-stick .trigger-button.left {
+    background-image: var(--bot-row-pinky-finger-button-source-image);
+    top: var(--lt-top);
+    left: var(--lt-left);
+    background-color: rgb(58, 54, 54);
+    border: 7.77778px solid rgb(0, 0, 0);
+    background-size: 128px auto;
+    --text-color: #ffffffFF;
+    --text-font-size: 57px;
+    --text-stroke-color: #ffffff;
+    --text-stroke-width: 0px;
+    --text-content: "LT";
+    --text-font-family: "Arial";
+}
+.fight-stick .trigger-button.left.pressed {
+    background-color: rgb(166, 166, 166);
+    background-size: 155px auto;
+    --text-stroke-width: -1px;
+}
+
+/* L3/R3 Sticks */
+.fight-stick .stick.right, .fight-stick .stick.left {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(95, 88, 88);
+    border: 7.77778px solid rgb(0, 0, 0);
+    background-size: 128px auto;
+    --text-color: #ffffffFF;
+    --text-font-size: 57px;
+    --text-stroke-color: #ffffff;
+    --text-stroke-width: 0px;
+    --text-content: "";
+    --text-font-family: "Arial";
+}
+
+.fight-stick .stick.right {
+    top: var(--rs-top);
+    left: var(--rs-left);
+    background-image: var(--rs-button-source-image);
+}
+.fight-stick .stick.right.pressed {
+    background-color: rgb(53, 49, 49);
+    background-size: 155px auto;
+    --text-color: #f32020FF;
+    --text-stroke-color: #000000;
+    --text-stroke-width: -1px;
+}
+
+.fight-stick .stick.left {
+    top: var(--ls-top);
+    left: var(--ls-left);
+    background-image: var(--ls-button-source-image);
+}
+.fight-stick .stick.left.pressed {
+    background-color: rgb(53, 49, 49);
+    background-size: 155px auto;
+    --text-color: #f32020FF;
+    --text-stroke-color: #000000;
+    --text-stroke-width: -1px;
+}
+
+/* D-Pad / Direction Buttons */
+.fight-stick .face.up, .fight-stick .face.right, .fight-stick .face.down, .fight-stick .face.left {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    border: 7.77778px solid rgb(0, 0, 0);
+    background-color: rgb(51, 51, 51);
+    background-size: 175px auto;
+    --text-color: #ffffff;
+    --text-font-size: 62px;
+    --text-stroke-color: #000000;
+    --text-stroke-width: 4px;
+    --text-content: "";
+    --text-font-family: "Helvetica Neue LT Pro";
+}
+
+.fight-stick .face.up {
+    background-image: var(--up-arrow-source-image);
+    top: var(--dir-up-top);
+    left: var(--dir-up-left);
+}
+.fight-stick .face.up.pressed {
+    background-color: rgb(255, 255, 255);
+}
+
+.fight-stick .face.right {
+    background-image: var(--right-arrow-source-image);
+    top: var(--dir-right-top);
+    left: var(--dir-right-left);
+}
+.fight-stick .face.right.pressed {
+    background-color: rgb(255, 255, 255);
+}
+
+.fight-stick .face.down {
+    background-image: var(--down-arrow-source-image);
+    top: var(--dir-down-top);
+    left: var(--dir-down-left);
+}
+.fight-stick .face.down.pressed {
+    background-color: rgb(255, 255, 255);
+}
+
+.fight-stick .face.left {
+    background-image: var(--left-arrow-source-image);
+    top: var(--dir-left-top);
+    left: var(--dir-left-left);
+}
+.fight-stick .face.left.pressed {
+    background-color: rgb(255, 255, 255);
+}
+
+/* FStick (Analog stick visual helper) */
+.fight-stick .fstick {
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / cover padding-box border-box;
+    visibility: hidden;
+    width: 150px;
+    height: 150px;
+}
