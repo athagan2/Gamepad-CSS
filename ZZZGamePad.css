@@ -5,14 +5,14 @@
     --right-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Right.png);
     --up-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Up.png);
 
-    /* Right side button image links (Kustomisasi Anda) */
-    --top-row-index-finger-button-source-image: url(https://i.im.ge/QMbio5q/Basic_Attack.png);
-    --top-row-middle-finger-button-source-image: url(https://i.im.ge/QMbi9fz/Special.png);
-    --top-row-ring-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/refs/heads/main/Switch_HD.png);
-    --top-row-pinky-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/refs/heads/main/Switch_HD.png);
+    /* Right side button image links (Kustomisasi Gambar Anda) */
+    --top-row-index-finger-button-source-image: url(https://i.im.ge/QMbio5q/Basic_Attack.png); /* Tombol X */
+    --top-row-middle-finger-button-source-image: url(https://i.im.ge/QMbi9fz/Special.png); /* Tombol Y */
+    --top-row-ring-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/refs/heads/main/Switch_HD.png); /* Bumper Kanan */
+    --top-row-pinky-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/refs/heads/main/Switch_HD.png); /* Bumper Kiri */
     
-    --bot-row-index-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/main/Dodge.png);
-    --bot-row-middle-finger-button-source-image: none;
+    --bot-row-index-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/main/Dodge.png); /* Tombol A */
+    --bot-row-middle-finger-button-source-image: none; /* Tombol B (Huruf B) */
     --bot-row-ring-finger-button-source-image: url(https://i.im.ge/QMb0lFz/Ultimate_Clean.png);
     --bot-row-pinky-finger-button-source-image: none;
 
@@ -210,7 +210,7 @@ body {
     --text-font-family: "Helvetica Neue LT Pro";
 }
 
-/* Face buttons (X, Y, A, B) */
+/* Face buttons (X, Y, A, B) - Menggunakan Variabel dari :root */
 .fight-stick .a, .fight-stick .b, .fight-stick .x, .fight-stick .y {
     position: fixed;
     width: 150px;
