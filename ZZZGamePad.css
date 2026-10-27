@@ -1,86 +1,4 @@
-:root {
-    /* Arrow button image links (D-Pad) */
-    --left-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Left.png);
-    --down-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Down.png);
-    --right-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Right.png);
-    --up-arrow-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Up.png);
-
-    /* Right side button image links (Kustomisasi Gambar Anda) */
-    --top-row-index-finger-button-source-image: url(https://i.im.ge/QMbio5q/Basic_Attack.png); /* Tombol X */
-    --top-row-middle-finger-button-source-image: url(https://i.im.ge/QMbi9fz/Special.png); /* Tombol Y */
-    --top-row-ring-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/refs/heads/main/Switch_HD.png); /* Bumper Kanan */
-    --top-row-pinky-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/refs/heads/main/Switch_HD.png); /* Bumper Kiri */
-    
-    --bot-row-index-finger-button-source-image: url(https://raw.githubusercontent.com/athagan2/Gamepad-CSS/main/Dodge.png); /* Tombol A */
-    --bot-row-middle-finger-button-source-image: none; /* Tombol B (Huruf B) */
-    --bot-row-ring-finger-button-source-image: url(https://i.im.ge/QMb0lFz/Ultimate_Clean.png);
-    --bot-row-pinky-finger-button-source-image: none;
-
-    /* Start/back vars */
-    --start-button-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/Start2pxBorder.png);
-    --back-button-source-image: url(https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/Back2pxBorder.png);
-
-    /* L3/R3 button vars */
-    --ls-button-source-image: none;
-    --rs-button-source-image: none;
-
-    /* Stick vars */
-    --fstick-source-image: url(https://imgur.com/Cdxibvo.png);
-
-    /* Location / Posisi Tombol */
-    --a-top: 533px;
-    --b-top: 393px;
-    --x-top: 393px;
-    --y-top: 253px;
-    
-    --rb-top: 45px;
-    --lb-top: 45px;
-    --rt-top: 45px;
-    --lt-top: 45px;
-    
-    --start-top: 240px;
-    --back-top: 240px;
-    
-    --ls-top: 585px;
-    --rs-top: 585px;
-    
-    --a-left: 905px;
-    --b-left: 1015px;
-    --x-left: 785px;
-    --y-left: 905px;
-    
-    --rb-left: 777px;
-    --lb-left: 337px;
-    --rt-left: 937px;
-    --lt-left: 177px;
-    
-    --start-left: 624px;
-    --back-left: 500px;
-    
-    --ls-left: 431px;
-    --rs-left: 695px;
-    
-    /* D-Pad Directional Location */
-    --dir-right-top: 393px;
-    --dir-right-left: 342px;
-    --dir-down-top: 528px;
-    --dir-down-left: 223px;
-    --dir-left-top: 395px;
-    --dir-left-left: 102px;
-    --dir-up-top: 258px;
-    --dir-up-left: 220px;
-
-    --vert-clearance: 160px;
-    --diag-vert-clearance: 80px;
-    --diag-horz-clearance: 140px;
-    --horz-clearance: var(--vert-clearance);
-}
-
-body { 
-    background-color: rgba(0, 0, 0, 0); 
-    margin: 0px auto; 
-    overflow: hidden; 
-}
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 
 .controller.fight-stick {
     background: transparent;
@@ -95,134 +13,16 @@ body {
     background: url(https://imgur.com/oDdTc1t.png) no-repeat;
 }
 
-/* Properties for all buttons */
-.fight-stick .back,
-.fight-stick .start,
-.fight-stick .a,
-.fight-stick .b,
-.fight-stick .x,
-.fight-stick .y,
-.fight-stick .bumper.right,
-.fight-stick .bumper.left,
-.fight-stick .trigger-button.right,
-.fight-stick .trigger-button.left,
-.fight-stick .stick.right,
-.fight-stick .stick.left,
-.fight-stick .face.up,
-.fight-stick .face.right,
-.fight-stick .face.down,
-.fight-stick .face.left {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  display: block;
-  border-radius: 0%;
-  translate: -50% -50%;
-  box-sizing: border-box;
-}
-
-.fight-stick .back.pressed,
-.fight-stick .start.pressed,
-.fight-stick .a.pressed,
-.fight-stick .b.pressed,
-.fight-stick .x.pressed,
-.fight-stick .y.pressed,
-.fight-stick .bumper.right.pressed,
-.fight-stick .bumper.left.pressed,
-.fight-stick .trigger-button.right.pressed,
-.fight-stick .trigger-button.left.pressed,
-.fight-stick .stick.right.pressed,
-.fight-stick .stick.left.pressed,
-.fight-stick .face.up.pressed,
-.fight-stick .face.right.pressed,
-.fight-stick .face.down.pressed,
-.fight-stick .face.left.pressed {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border-radius: 0%;
-  translate: -50% -50%;
-  -webkit-filter: brightness(100%) invert(0);
-  background-position-y: 100%;
-  box-sizing: border-box;
-  transform: none;
-}
-
-.fight-stick .back::before,
-.fight-stick .start::before,
-.fight-stick .a::before,
-.fight-stick .b::before,
-.fight-stick .x::before,
-.fight-stick .y::before,
-.fight-stick .bumper.right::before,
-.fight-stick .bumper.left::before,
-.fight-stick .trigger-button.right::before,
-.fight-stick .trigger-button.left::before,
-.fight-stick .stick.right::before,
-.fight-stick .stick.left::before,
-.fight-stick .face.up::before,
-.fight-stick .face.right::before,
-.fight-stick .face.down::before,
-.fight-stick .face.left::before {
-  color: var(--text-color);
-  font-size: var(--text-font-size);
-  content: var(--text-content);
-  font-family: var(--text-font-family);
-  translate: -50% -50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-text-stroke-color: var(--text-stroke-color);
-  -webkit-text-stroke-width: var(--text-stroke-width);
-}
-
-/* Start/Back */
-.fight-stick .back, .fight-stick .start {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    border: 5.55556px solid rgb(0, 0, 0);
-}
-
-.fight-stick .back {
-    background-image: var(--back-button-source-image);
-    top: var(--back-top);
-    left: var(--back-left);
-    background-color: rgb(51, 51, 51);
-    --text-color: #ffffff;
-    --text-font-size: 62px;
-    --text-stroke-color: #000000;
-    --text-stroke-width: 4px;
-    --text-content: "";
-    --text-font-family: "Helvetica Neue LT Pro";
-}
-
-.fight-stick .start {
-    background-image: var(--start-button-source-image);
-    top: var(--start-top);
-    left: var(--start-left);    
-    background-color: rgb(51, 51, 51);
-    --text-color: #ffffff;
-    --text-font-size: 62px;
-    --text-stroke-color: #000000;
-    --text-stroke-width: 4px;
-    --text-content: "";
-    --text-font-family: "Helvetica Neue LT Pro";
-}
-
-/* Face buttons (X, Y, A, B) - Menggunakan Variabel dari :root */
-.fight-stick .a, .fight-stick .b, .fight-stick .x, .fight-stick .y {
-    position: fixed;
+/* Tombol X (Basic Attack) */
+.fight-stick .x {
+    top: 393px;
+    left: 785px;
+    background: rgb(0, 189, 186) url("https://i.im.ge/QMbio5q/Basic_Attack.png") no-repeat scroll 50% 50% / 133px auto padding-box border-box;
+    visibility: visible;
     width: 150px;
     height: 150px;
     border: 8.33333px solid rgb(0, 0, 0);
-}
-
-.fight-stick .x {
-    background-image: var(--top-row-index-finger-button-source-image);
-    top: var(--x-top);
-    left: var(--x-left);
-    background-color: rgb(0, 189, 186);
+    border-radius: 100%;
     background-size: 133px auto;
     --text-color: #ffffff;
     --text-font-size: 62px;
@@ -232,13 +32,18 @@ body {
     --text-font-family: "Helvetica Neue LT Pro";
 }
 
+/* Tombol Y (Special) */
 .fight-stick .y {
-    background-image: var(--top-row-middle-finger-button-source-image);
-    top: var(--y-top);
-    left: var(--y-left);
-    background-color: rgb(0, 0, 0);
+    top: 253px;
+    left: 905px;
+    background: rgb(0, 0, 0) url("https://i.im.ge/QMbi9fz/Special.png") no-repeat scroll 50% 50% / 166px auto padding-box border-box;
+    visibility: visible;
+    width: 150px;
+    height: 150px;
+    border: 8.33333px solid rgb(0, 0, 0);
+    border-radius: 100%;
     background-size: 166px auto;
-    --text-color: #ffffffFF;
+    --text-color: #ffffff;
     --text-font-size: 62px;
     --text-stroke-color: #000000;
     --text-stroke-width: 4px;
@@ -246,13 +51,18 @@ body {
     --text-font-family: "Helvetica Neue LT Pro";
 }
 
+/* Tombol A (Dodge - Menggunakan Link GitHub Anda) */
 .fight-stick .a {
-    background-image: var(--bot-row-index-finger-button-source-image);
-    top: var(--a-top);
-    left: var(--a-left);
-    background-color: rgb(0, 0, 0);
+    top: 533px;
+    left: 905px;
+    background: rgb(0, 0, 0) url("https://raw.githubusercontent.com/athagan2/Gamepad-CSS/main/Dodge.png") no-repeat scroll 50% 50% / 137px auto padding-box border-box;
+    visibility: visible;
+    width: 150px;
+    height: 150px;
+    border: 8.33333px solid rgb(0, 0, 0);
+    border-radius: 100%;
     background-size: 137px auto;
-    --text-color: #ffffffFF;
+    --text-color: #ffffff;
     --text-font-size: 62px;
     --text-stroke-color: #000000;
     --text-stroke-width: 4px;
@@ -260,131 +70,88 @@ body {
     --text-font-family: "Helvetica Neue LT Pro";
 }
 
+/* Tombol B */
 .fight-stick .b {
-    background-image: var(--bot-row-middle-finger-button-source-image);
-    top: var(--b-top);
-    left: var(--b-left);
-    background-color: rgb(87, 82, 82);
+    top: 393px;
+    left: 1015px;
+    background: rgb(87, 82, 82) none no-repeat scroll 50% 50% / 128px auto padding-box border-box;
+    visibility: visible;
+    width: 150px;
+    height: 150px;
     border: 6.94444px solid rgb(0, 0, 0);
-    background-size: 128px auto;
-    --text-color: #ffffffFF;
+    border-radius: 100%;
+    --text-color: #ffffff;
     --text-font-size: 57px;
-    --text-stroke-color: #ffffff;
-    --text-stroke-width: 0px;
     --text-content: "B";
     --text-font-family: "Arial";
 }
 
-/* Bumpers */
-.fight-stick .bumper.right, .fight-stick .bumper.left {
-    position: fixed;
-    width: 150px;
-    height: 150px;
-    border: 8.33333px solid rgb(0, 0, 0);
-}
-
+/* Bumper Kanan (RB) */
 .fight-stick .bumper.right {
-    background-image: var(--top-row-ring-finger-button-source-image);
-    top: var(--rb-top);
-    left: var(--rb-left);
-    background-color: rgb(0, 0, 0);
-    background-size: 144px auto;
-    --text-color: #ffffff;
-    --text-font-size: 62px;
-    --text-stroke-color: #000000;
-    --text-stroke-width: 4px;
-    --text-content: "";
-    --text-font-family: "Helvetica Neue LT Pro";
-}
-
-.fight-stick .bumper.left {
-    background-image: var(--top-row-pinky-finger-button-source-image);
-    top: var(--lb-top);
-    left: var(--lb-left);
-    background-color: rgb(0, 0, 0);
-    background-size: 144px auto;
-    --text-color: #ffffff;
-    --text-font-size: 62px;
-    --text-stroke-color: #000000;
-    --text-stroke-width: 4px;
-    --text-content: "";
-    --text-font-family: "Helvetica Neue LT Pro";
-}
-
-/* Triggers */
-.fight-stick .trigger-button.right, .fight-stick .trigger-button.left {
-    position: fixed;
+    top: 45px;
+    left: 777px;
+    background: rgb(0, 0, 0) url("https://raw.githubusercontent.com/athagan2/Gamepad-CSS/refs/heads/main/Switch_HD.png") no-repeat scroll 50% 50% / 144px auto padding-box border-box;
+    visibility: visible;
     width: 150px;
     height: 150px;
-}
-
-.fight-stick .trigger-button.right {
-    background-image: var(--bot-row-ring-finger-button-source-image);
-    top: var(--rt-top);
-    left: var(--rt-left);
-    background-color: rgb(0, 0, 0);
     border: 8.33333px solid rgb(0, 0, 0);
-    background-size: 137px auto;
-    --text-color: #ffffffFF;
-    --text-font-size: 62px;
-    --text-stroke-color: #000000;
-    --text-stroke-width: 4px;
-    --text-content: "";
-    --text-font-family: "Helvetica Neue LT Pro";
+    border-radius: 100%;
 }
 
-.fight-stick .trigger-button.left {
-    background-image: var(--bot-row-pinky-finger-button-source-image);
-    top: var(--lt-top);
-    left: var(--lt-left);
-    background-color: rgb(58, 54, 54);
-    border: 6.94444px solid rgb(0, 0, 0);
-    background-size: 128px auto;
-    --text-color: #ffffffFF;
-    --text-font-size: 57px;
-    --text-stroke-color: #ffffff;
-    --text-stroke-width: 0px;
-    --text-content: "LT";
-    --text-font-family: "Arial";
-}
-
-/* Direction buttons / D-Pad */
-.fight-stick .face.up, .fight-stick .face.right, .fight-stick .face.down, .fight-stick .face.left {
-    position: fixed;
+/* Bumper Kiri (LB) */
+.fight-stick .bumper.left {
+    top: 45px;
+    left: 337px;
+    background: rgb(0, 0, 0) url("https://raw.githubusercontent.com/athagan2/Gamepad-CSS/refs/heads/main/Switch_HD.png") no-repeat scroll 50% 50% / 144px auto padding-box border-box;
+    visibility: visible;
     width: 150px;
     height: 150px;
-    border: 6.94444px solid rgb(0, 0, 0);
-    background-color: rgb(51, 51, 51);
-    background-size: 175px auto;
-    opacity: 1;
-    --text-color: #ffffff;
-    --text-font-size: 62px;
-    --text-stroke-color: #000000;
-    --text-stroke-width: 4px;
-    --text-content: "";
-    --text-font-family: "Helvetica Neue LT Pro";
+    border: 8.33333px solid rgb(0, 0, 0);
+    border-radius: 100%;
 }
 
-.fight-stick .face.up {
-    background-image: var(--up-arrow-source-image);
-    top: var(--dir-up-top);
-    left: var(--dir-up-left);
+/* Trigger Kanan (RT) */
+.fight-stick .trigger-button.right {
+    top: 45px;
+    left: 937px;
+    background: rgb(0, 0, 0) url("https://i.im.ge/QMb0lFz/Ultimate_Clean.png") no-repeat scroll 50% 50% / 137px auto padding-box border-box;
+    visibility: visible;
+    width: 150px;
+    height: 150px;
+    border: 8.33333px solid rgb(0, 0, 0);
+    border-radius: 100%;
 }
 
-.fight-stick .face.right {
-    background-image: var(--right-arrow-source-image);
-    top: var(--dir-right-top);
-    left: var(--dir-right-left);
-}
-
-.fight-stick .face.down {
-    background-image: var(--down-arrow-source-image);
-    top: var(--dir-down-top);
-    left: var(--dir-down-left);
-}
-
+/* D-Pad (Left, Down, Right, Up) */
 .fight-stick .face.left {
-    background-image: var(--left-arrow-source-image);
-    top: var(--dir-left-top);
-    left: var(--dir-left-left);
+    top: 395px; left: 102px;
+    background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Left.png") no-repeat scroll 50% 50% / 175px auto padding-box border-box;
+    width: 150px; height: 150px; border: 6.94444px solid rgb(0, 0, 0); border-radius: 100%;
+}
+.fight-stick .face.down {
+    top: 528px; left: 223px;
+    background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Down.png") no-repeat scroll 50% 50% / 175px auto padding-box border-box;
+    width: 150px; height: 150px; border: 6.94444px solid rgb(0, 0, 0); border-radius: 100%;
+}
+.fight-stick .face.right {
+    top: 393px; left: 342px;
+    background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Right.png") no-repeat scroll 50% 50% / 175px auto padding-box border-box;
+    width: 150px; height: 150px; border: 6.94444px solid rgb(0, 0, 0); border-radius: 100%;
+}
+.fight-stick .face.up {
+    top: 258px; left: 220px;
+    background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Up.png") no-repeat scroll 50% 50% / 175px auto padding-box border-box;
+    width: 150px; height: 150px; border: 6.94444px solid rgb(0, 0, 0); border-radius: 100%;
+}
+
+/* Start & Back */
+.fight-stick .start {
+    top: 240px; left: 624px;
+    background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/Start2pxBorder.png") no-repeat scroll 50% 50% / 80px auto padding-box border-box;
+    width: 100px; height: 100px; border: 5.55556px solid rgb(0, 0, 0); border-radius: 100%;
+}
+.fight-stick .back {
+    top: 240px; left: 500px;
+    background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/Back2pxBorder.png") no-repeat scroll 50% 50% / 80px auto padding-box border-box;
+    width: 100px; height: 100px; border: 5.55556px solid rgb(0, 0, 0); border-radius: 100%;
 }
