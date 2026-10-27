@@ -13,7 +13,7 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
     background: url(https://imgur.com/oDdTc1t.png) no-repeat;
 }
 
-/* Tombol X (Basic Attack) */
+/* Tombol X (Basic Attack) - Diatur ke Kanan */
 .fight-stick .x {
     top: 393px;
     left: 785px;
@@ -32,7 +32,7 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
     --text-font-family: "Helvetica Neue LT Pro";
 }
 
-/* Tombol Y (Special) */
+/* Tombol Y (Special) - Diatur ke Kanan */
 .fight-stick .y {
     top: 253px;
     left: 905px;
@@ -51,7 +51,7 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
     --text-font-family: "Helvetica Neue LT Pro";
 }
 
-/* Tombol A (Dodge - Menggunakan Link GitHub Anda) */
+/* Tombol A (Dodge) - Diatur ke Kanan */
 .fight-stick .a {
     top: 533px;
     left: 905px;
@@ -70,7 +70,7 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
     --text-font-family: "Helvetica Neue LT Pro";
 }
 
-/* Tombol B */
+/* Tombol B - Diatur ke Kanan */
 .fight-stick .b {
     top: 393px;
     left: 1015px;
@@ -122,7 +122,23 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
     border-radius: 100%;
 }
 
-/* D-Pad (Left, Down, Right, Up) */
+/* Trigger Kiri (LT) */
+.fight-stick .trigger-button.left {
+    top: 45px;
+    left: 177px;
+    background: rgb(58, 54, 54) none no-repeat scroll 50% 50% / 128px auto padding-box border-box;
+    visibility: visible;
+    width: 150px;
+    height: 150px;
+    border: 6.94444px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    --text-color: #ffffff;
+    --text-font-size: 57px;
+    --text-content: "LT";
+    --text-font-family: "Arial";
+}
+
+/* D-Pad (Arah Panah) - Diatur kembali ke sebelah KIRI */
 .fight-stick .face.left {
     top: 395px; left: 102px;
     background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/2XKO/2025/Arrow%20Icons/White%20Basic/Arrow%20Left.png") no-repeat scroll 50% 50% / 175px auto padding-box border-box;
@@ -144,7 +160,7 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
     width: 150px; height: 150px; border: 6.94444px solid rgb(0, 0, 0); border-radius: 100%;
 }
 
-/* Start & Back */
+/* Start & Back - Di Tengah */
 .fight-stick .start {
     top: 240px; left: 624px;
     background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/Start2pxBorder.png") no-repeat scroll 50% 50% / 80px auto padding-box border-box;
@@ -154,4 +170,14 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
     top: 240px; left: 500px;
     background: rgb(51, 51, 51) url("https://raw.githubusercontent.com/KurtMage/KurtMage.github.io/main/images/Console%20controllers/xbox/icons/white2PxBorder/Back2pxBorder.png") no-repeat scroll 50% 50% / 80px auto padding-box border-box;
     width: 100px; height: 100px; border: 5.55556px solid rgb(0, 0, 0); border-radius: 100%;
+}
+
+/* Stick Kiri & Kanan */
+.fight-stick .stick.left {
+    top: 585px; left: 431px;
+    width: 150px; height: 150px; border: 6.94444px solid rgb(0, 0, 0); border-radius: 100%;
+}
+.fight-stick .stick.right {
+    top: 585px; left: 695px;
+    width: 150px; height: 150px; border: 6.94444px solid rgb(0, 0, 0); border-radius: 100%;
 }
